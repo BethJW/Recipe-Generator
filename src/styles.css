@@ -1,0 +1,47 @@
+body {
+  background-image: url("https://img.freepik.com/premium-vector/sprinkles-seamless-pattern-colorful-sprinkles-solid-background-repeating-pattern-design-vector_561158-199.jpg");
+  background-size: cover;
+}
+.container {
+  margin: 120px auto;
+  background-color: white;
+  max-width: 600px;
+  border-radius: 10px;
+}
+h1 {
+  text-align: center;
+  padding-top: 20px;
+}
+form {
+  display: flex;
+  justify-content: center;
+  margin-top: -10px;
+  border-color: black;
+}
+
+.instruction {
+  width: 70%;
+  padding: 10px;
+  border-radius: 5px;
+}
+.button {
+  width: 20%;
+  background-color: rgb(185, 234, 251);
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.recipe {
+  text-align: left;
+  padding: 10px;
+  margin: 20px;
+  border-left: solid 1px rgb(4, 186, 247);
+  background-color: rgba(245, 246, 247, 0.824);
+}
+footer {
+  text-align: center;
+  padding-bottom: 10px;
+}
+a {
+  color: rgb(4, 186, 247);
+}

@@ -5,32 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Recipe Generator</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
-    <h1>AI Recipe Generator🧁</h1>
-    <form>
-      <input
-        type="text"
-        placeholder="Enter a ingredient for recipe inspiration..."
-        autofocus="on"
-        required
-      />
-      <input type="submit" value="Search" />
-    </form>
-    <div class="recipe">recipe will go here</div>
-    <script src="src/index.js"></script>
-    <footer>
-      Coded by
-      <a href="https://github.com/BethJW" target="_blank">Beth Williamson</a>
-      and is open-sourced on
-      <a href="https://github.com/BethJW/Recipe-Generator" target="_blank"
-        >GitHub</a
-      >
-      and hosted on
-      <a href="https://recipe-generator-bjw.netlify.app/" target="_blank"
-        >Netlify</a
-      >
-    </footer>
+    <div class="container">
+      <h1>AI Recipe Generator🧁</h1>
+      <form>
+        <input
+          type="text"
+          placeholder="Enter a ingredient for recipe inspiration..."
+          autofocus="on"
+          required
+          class="instruction"
+        />
+        <input type="submit" value="Search" class="button" />
+      </form>
+      <div class="recipe">recipe will go here</div>
+      <script src="src/index.js"></script>
+      <footer>
+        Coded by
+        <a href="https://github.com/BethJW" target="_blank">Beth Williamson</a>
+        and is open-sourced on
+        <a href="https://github.com/BethJW/Recipe-Generator" target="_blank"
+          >GitHub</a
+        >
+        and hosted on
+        <a href="https://recipe-generator-bjw.netlify.app/" target="_blank"
+          >Netlify</a
+        >
+      </footer>
+    </div>
   </body>
 </html>
