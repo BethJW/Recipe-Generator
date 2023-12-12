@@ -6,21 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Recipe Generator</title>
     <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   </head>
   <body>
     <div class="container">
       <h1>AI Recipe Generator🧁</h1>
-      <form>
+      <form id="recipe-generator">
         <input
           type="text"
           placeholder="Enter a ingredient for recipe inspiration..."
           autofocus="on"
           required
           class="instruction"
+          id="search-input"
         />
-        <input type="submit" value="Search" class="button" />
+        <input type="submit" value="Search" class="button" id="button" />
       </form>
-      <div class="recipe">recipe will go here</div>
+      <div class="recipe" id="recipe"></div>
       <script src="src/index.js"></script>
       <footer>
         Coded by
