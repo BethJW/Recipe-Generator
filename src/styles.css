@@ -8,6 +8,7 @@ body {
   max-width: 600px;
   border-radius: 10px;
 }
+
 h1 {
   text-align: center;
   padding-top: 20px;
@@ -37,11 +38,36 @@ form {
   margin: 20px;
   border-left: solid 1px rgb(4, 186, 247);
   background-color: rgba(245, 246, 247, 0.824);
+  line-height: 20px;
 }
 footer {
   text-align: center;
   padding-bottom: 10px;
+  padding-top: 10px;
 }
 a {
   color: rgb(4, 186, 247);
+}
+.hidden {
+  display: none;
+}
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+.hint {
+  opacity: 40%;
+  padding: 5px;
+  margin-left: 14px;
+  font-size: 13px;
 }

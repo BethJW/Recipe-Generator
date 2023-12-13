@@ -9,8 +9,13 @@ function generate(event) {
   let context = `You are a highly skilled AI Baking assistant that knows a range of different dessert recipes from just one ingredient. Please use UK imperial measurements such as: "grams"`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
   axios.get(apiUrl).then(displayRecipe);
+
   let recipeContainer = document.querySelector(`#recipe`);
-  recipeContainer.innerHTML = `Please wait a moment...`;
+  let hintElement = document.querySelector(".hint");
+  hintElement.classList.add("hidden");
+  recipeContainer.classList.remove("hidden");
+  recipeContainer.classList.remove("blink");
+  recipeContainer.innerHTML = `<span class="blink">⌛️</span> Please wait a moment...`;
 }
 function displayRecipe(response) {
   new Typewriter("#recipe", {
