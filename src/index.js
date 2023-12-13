@@ -6,7 +6,7 @@ function generate(event) {
   let searchInput = document.querySelector("#search-input");
   let apiKey = `b9b10f3af19o1ba6ec0aed0664cb453t`;
   let prompt = `Please generate a recipe based on ${searchInput.value}`;
-  let context = `You are a highly skilled AI Baking assistant that knows a range of different dessert recipes from just one ingredient. Please use UK imperial measurements such as: "grams"`;
+  let context = `You are a highly skilled AI Baking assistant that knows a range of different dessert recipes from just one ingredient. Please use UK imperial measurements such as: "grams" and make the answer short.`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
   axios.get(apiUrl).then(displayRecipe);
 
