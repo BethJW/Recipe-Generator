@@ -1,6 +1,6 @@
 body {
   background-image: url("https://img.freepik.com/premium-vector/sprinkles-seamless-pattern-colorful-sprinkles-solid-background-repeating-pattern-design-vector_561158-199.jpg");
-  background-size: cover;
+  background-repeat: repeat;
 }
 .container {
   margin: 120px auto;
